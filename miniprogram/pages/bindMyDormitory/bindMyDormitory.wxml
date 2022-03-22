@@ -1,0 +1,41 @@
+<!--pages/bindMyDormitory/bindMyDormitory.wxml-->
+<van-cell-group>
+  <van-field
+    value="{{ real_name }}"
+    required
+    clearable
+    bind:change="name_change"
+    label="真实姓名"
+    placeholder="请输入姓名"
+  />
+  <van-field
+    value="{{ courtyard }}"
+    required
+    clearable
+    label="围合号"
+    bind:change="yard_change"
+    icon="question-o"
+    placeholder="请输入围合号"
+    bind:click-icon="onClickIcon"
+  />
+  <van-field
+    value="{{ unit }}"
+    type="unit"
+    label="单元号"
+    bind:change="unit_change"
+    placeholder="请输入单元号"
+    required
+    border="{{ false }}"
+  />
+  <van-field
+    value="{{ room }}"
+    type="room"
+    label="寝室号"
+    bind:change="room_change"
+    placeholder="请输入寝室号"
+    required
+    border="{{ false }}"
+  />
+</van-cell-group>
+
+<button bindtap="onclick">提交信息</button>

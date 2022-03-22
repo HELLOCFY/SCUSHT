@@ -1,0 +1,86 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/forum/forum",
+    "pages/verify/verify",
+    "pages/lookMyMessage/lookMyMessage",
+    "pages/lookMyComment/lookMyComment",
+    "pages/bindMyDormitory/bindMyDormitory",
+    "pages/developerEntry/developerEntry",
+    "pages/aboutMe/aboutMe",
+    "pages/clotheIndex/clotheIndex",
+    "pages/foodIndex/foodIndex",
+    "pages/liveIndex/liveIndex",
+    "pages/goOutIndex/goOutIndex",
+    "pages/livetips/livetips",
+    "pages/ActivityPunchIn/ActivityPunchIn",
+    "pages/Enclosure/Enclosure",
+    "pages/traffic/traffic",
+    "pages/place/place",
+    "pages/sellOldClothe/sellOldClothe",
+    "pages/lookSellOldClothe/lookSellOldClothe",
+    "pages/postAMessage/postAMessage",
+    "pages/viewMessage/viewMessage",
+    "pages/postACommnet/postAComment",
+    "pages/showAMessage/showAMessage",
+    "pages/lookMyStar/lookMyStar",
+    "pages/showAReport/showAReport",
+    "pages/wearCommend/wearCommend",
+    "pages/search/search",
+    "pages/deleteMessage/deleteMessage"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "四川大学生活通",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-skeleton": "@vant/weapp/skeleton/index",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-tree-select": "@vant/weapp/tree-select/index"
+
+  },
+
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/viewMessage/viewMessage",
+        "text": "论坛",
+        "iconPath": "/images/forum.png",
+        "selectedIconPath": "/images/forum_sel.png"
+      },
+      
+      {
+        "pagePath": "pages/index/index",
+        "text": "生活",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_sel.png"
+      },
+      {
+        "pagePath": "pages/aboutMe/aboutMe",
+        "text": "我的",
+        "iconPath": "/images/me.png",
+        "selectedIconPath": "/images/me_sel.png"
+      }
+    ]
+  }
+
+}

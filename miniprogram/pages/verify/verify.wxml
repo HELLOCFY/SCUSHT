@@ -1,0 +1,50 @@
+<van-toast id="van-toast"  />
+<van-cell-group>
+  <van-field
+    value="{{ stuId }}"
+    required
+    clearable
+    label="学号"
+    bind:change="idChange"
+    icon="question-o"
+    placeholder="请输入学号"
+    bind:click-icon="onClickIcon"
+  />
+
+  <van-field
+    value="{{ stuNickname }}"
+    required
+    clearable
+    bind:change="stuNicknameChange"
+    label="昵称"
+    placeholder="请输入您的昵称"
+    required
+    border="{{ false }}"
+  />
+</van-cell-group>
+
+
+
+
+<van-cell-group>
+  <van-field
+    value="{{ verifyMessage }}"
+    center
+    clearable
+    bind:change="verifyMessageChange"
+    label="邮箱验证码"
+    placeholder="请输入邮箱验证码"
+    border="{{ false }}"
+    use-button-slot
+  >
+    
+      <van-button slot="button" size="small" type="default" bindtap="send" disabled="{{smsFlag}}" style="color:{{sendColor}}" custom-style="width:20vmin">
+      {{sendTime}}
+      </van-button>
+  </van-field>
+</van-cell-group>
+
+<view style="text-align:center">
+  <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" >授权并且提交</button>
+<view wx:else>请升级微信版本</view>
+</view>

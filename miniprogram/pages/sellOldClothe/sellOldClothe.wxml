@@ -1,0 +1,16 @@
+<view class="indexTitle">旧物转让信息发帖</view>
+
+<form report-submit="true" bindsubmit="save">
+  <view class="box">
+    <span class="label">标题:</span><input type="text" placeholder="此处输入标题" class="messageTitle" name="title" value="{{titleVal}}" bindinput="titleInput"/>
+  </view>
+  <view class="box2">
+    <span class="label">内容:</span><textarea type="textarea" maxlength="500" placeholder="此处输入正文，如果需要上传附件请点击“上传附件”按钮。" class="messageContext" name="content" value="{{contentVal}}" bindinput="contentInput"/>
+  </view>
+  <view class="buttonBox">
+    <!-- 其中上传附件按钮还未实现 -->
+    <button class="button" bindtap="upimg">上传附件</button>
+    <button class="button" form-type="submit">提交</button>
+  </view>
+</form>
+<view bindtap="howToUse" class="contact">如何使用？</view>

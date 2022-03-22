@@ -1,0 +1,126 @@
+.btn{
+  position: fixed;
+  height: 12vmin;
+  width: 12vmin;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+  line-height: 12vmin;
+  font-size: 8vmin;
+  color: white;
+  bottom: 20vmin;
+  right:10vmin;
+  z-index: 999;
+}
+.viewMessagebox{
+  width: 90vmin;
+  margin-left:5vmin;
+  margin-right:5vmin;
+  border-bottom:0.5vmin solid gray;
+  border-radius: 1vmin;
+  box-shadow: 0 2vmin 2vmin gray;
+  margin-top:5vmin;
+  position: relative;
+}
+
+.userImage{
+  margin-top:3vmin;
+  height: 15vmin;
+  width: 15vmin;
+  border-radius:50%;
+  margin-left: 2vmin;
+}
+.viewMessagebox .userName{
+  margin-top:3vmin;
+  font-size: 6vmin;
+  display: inline-block;
+  width:65vmin;
+  height: 10vmin;
+  line-height: 10vmin;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  vertical-align: top;
+  margin-left: 5vmin;
+}
+
+.viewMessagebox .time{
+  margin-top:3vmin;
+  display: inline-block;
+  width:65vmin;
+  height: 10vmin;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  vertical-align: top;
+  margin-left: 5vmin;
+  position: absolute;
+  top:10vmin;
+  left: 15vmin;
+  color: gray;
+}
+
+
+
+
+.messageBox{
+  margin-top:3vmin;
+  font-size: 4vmin;
+  padding-left: 3vmin;
+  padding-right: 3vmin;
+}
+.messageTitle{
+  margin-top:3vmin;
+  font-size: 5vmin;
+  display: -webkit-box;  /*设置为弹性盒子*/
+  -webkit-line-clamp: 3;  /*最多显示5行*/
+  overflow: hidden;  /*超出隐藏*/
+  text-overflow: ellipsis;  /*超出显示为省略号*/
+  -webkit-box-orient: vertical;
+  word-break: break-all;  /*强制英文单词自动换行*/
+  padding-left: 3vmin;
+  padding-right: 3vmin;
+}
+Page{
+  background-color: rgb(244,244,244);
+}
+.text{
+  font-size: 6vmin;
+  line-height: 8vmin;
+  color:black;
+  margin-top: 3vmin;
+  margin-left: 3vmin;
+  width: 90vmin;
+  left: 5vmin;
+  height: 8vmin;
+  /*background-color: gray;*/
+}
+.optionBox{
+  height: 10vmin;
+  width: 100vmin;
+  text-align: center;
+  margin-top: 3vmin;
+}
+.optionBox .option image{
+  height: 8vmin;
+  width: 8vmin;
+  line-height: 10vmin;
+}
+.optionBox .option h{
+  font-size:8vmin;
+  line-height: 10vmin;
+  vertical-align: top;
+}
+.optionBox .option{
+  display: inline-block;
+  padding-left: 5vmin;
+  padding-right: 5vmin;
+}
+.viewMessagebox .imageBox{
+  width: 60vmin;
+  height: auto;
+  margin-left: 6vmin;
+  margin-right:6vmin;
+  margin-top:6vmin;
+
+}

@@ -1,0 +1,145 @@
+/* pages/liveIndex/liveIndex.wxss */
+button{
+  margin-top: 50rpx;
+  margin-bottom: 30rpx;
+  background-color:white;
+}
+.buttonshow{
+  position: relative !important;
+    width:30% !important ;
+    background-color: blanchedalmond!important;
+}
+.button1{
+  width:100% !important;
+  height: 400rpx !important;
+}
+.text1{
+  text-align:center;
+}
+.button2{
+  width:100% !important;
+  height: 400rpx !important;
+}
+.button3{
+  width:100% !important;
+  height: 400rpx !important;
+}
+.button4{
+  width:100% !important;
+  height: 400rpx !important;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}
+.text1{
+  position: absolute;
+  height: 400rpx;
+  width: 400rpx;
+  left:320rpx;
+  text-align: left !important;
+  font-family: 'Courier New', Courier, monospace;
+   margin-top: 5%;
+}
+.text2{
+  position: absolute;
+  height: 400rpx;
+  width: 400rpx;
+  left:320rpx;
+  text-align: left !important;
+  font-family: 'Courier New', Courier, monospace;
+     margin-top: 5%;
+}
+.text3{
+  position: absolute;
+  height: 400rpx;
+  width: 400rpx;
+  left:320rpx;
+  text-align: left !important;
+  font-family: 'Courier New', Courier, monospace;
+     margin-top: 5%;
+}
+.text4{
+  position: absolute;
+  height: 400rpx;
+  width: 400rpx;
+  left:320rpx;
+  text-align: left !important;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 5%;
+}
+.image1 image{
+  height:300rpx;
+  width:300rpx;
+  position: absolute;
+  left:0px;
+}
+.image2 image{
+  height:300rpx;
+  width:300rpx;
+  position: absolute;
+  left:0px;
+}
+.image3 image{
+  height:300rpx;
+  width:300rpx;
+  position: absolute;
+  left:0px;
+}
+.image4 image{
+  height:300rpx;
+  width:300rpx;
+  position: absolute;
+  left:0px;
+}
+.mini-btn{
+  margin-right: 10rpx;
+}
+
+/* 侧边导航栏*/
+.all{
+  display: flex;
+}
+.left{
+  width:20%!important;
+  position: fixed;
+}
+
+.right{
+  width:70%!important;
+}
+
+.text5{
+     font-family: 'Courier New', Courier, monospace;
+     margin-top: 5%;
+}
+.text6{
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 5%;
+}
+.view1{
+  border: 3rpx solid #faca82;
+	border-radius: 10rpx;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button5{
+  width:40%;
+  background-color: rgb(16, 201, 170)!important;
+  background: transparent;   /*设置背景颜色一致*/
+}
+.box_1{
+  margin-left: 20%;
+  width:75%;
+  text-align: center;
+}
+.box_1 image{
+  width:100%!important;
+}
+button{width: 100%!important;}
+.tabs1{
+  position: sticky; top: 0px;
+}

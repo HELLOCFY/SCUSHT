@@ -1,0 +1,107 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/clotheIndex/clotheIndex",
+          "pathName": "pages/clotheIndex/clotheIndex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/forum/forum",
+          "pathName": "pages/forum/forum",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/postAMessage/postAMessage",
+          "pathName": "pages/postAMessage/postAMessage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/sellOldClothe/sellOldClothe",
+          "pathName": "pages/sellOldClothe/sellOldClothe",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/aboutMe/aboutMe",
+          "pathName": "pages/aboutMe/aboutMe",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/verify/verify",
+          "pathName": "pages/verify/verify",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/viewMessage/viewMessage",
+          "pathName": "pages/viewMessage/viewMessage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/report_temp/report_temp",
+          "pathName": "pages/report_temp/report_temp",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/showAMessage/showAMessage",
+          "pathName": "pages/showAMessage/showAMessage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/postACommnet/postAComment",
+          "pathName": "pages/postACommnet/postAComment",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/developerEntry/developerEntry",
+          "pathName": "pages/developerEntry/developerEntry",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wearCommend/wearCommend",
+          "pathName": "pages/wearCommend/wearCommend",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

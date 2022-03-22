@@ -1,0 +1,10 @@
+<!--pages/developerEntry/developerEntry.wxml-->
+<van-toast id="van-toast"  />
+<view wx:for="{{answer}}">
+  <view class="viewReportbox"  bindtap="showAReport" wx:key="index" data-index="{{index}}">
+  <view class="ReportClass">类型：{{item.str}}</view>
+  <view class="ReportCount">被举报次数: {{item.report_count}}</view>
+  <view class="ReportTitle">{{item.title}}</view>
+  <view class="ReportBox">{{item.quick_text}}...</view>
+  </view>
+</view>

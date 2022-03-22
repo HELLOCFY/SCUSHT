@@ -1,0 +1,79 @@
+<!--pages/foodIndex/foodIndex.wxml-->
+<van-tabs active="{{ active }}" tab-class="tab">
+<!--左侧栏-三餐推荐部分-->
+<van-tab title="三餐推荐">
+<van-dialog use-slot show="{{ show1 }}" show-cancel-button bind:close="onClose2">
+<image src="{{show_pic}}" /> 
+<text class="text1">{{show_detail}}</text>
+</van-dialog>
+<van-dialog use-slot show="{{ show2 }}" show-cancel-button bind:close="onClose3">
+<image src="{{show_pic}}" /> 
+<text class="text1">{{show_detail}}</text>
+</van-dialog>
+<van-dialog use-slot show="{{ show3 }}" show-cancel-button bind:close="onClose4">
+<image src="{{show_pic}}" /> 
+<text class="text1">{{show_detail}}</text>
+</van-dialog>
+  <view class="sancan">
+    <van-dialog use-slot show="{{ show4 }}" show-cancel-button bind:close="onClose1">
+    <text class="text1">\n点击图片即可查看对应图谱（图片仅供参考）</text>
+    </van-dialog>
+    <view class="zaocan">
+  早餐
+  </view>
+  <view class = "zaocanimage">
+  <image src="{{zaocan[0].url}}" bindtap="message1" data-url="{{zaocan[0].url}}" data-detail="{{zaocan[0].detail}}"></image>
+  </view>
+  <view class="wucan">
+  午餐
+  </view>
+  <view class = "wucanimage">
+  <image src="{{zaocan[1].url}}"  bindtap="message2" data-url="{{zaocan[1].url}}" data-detail="{{zaocan[1].detail}}"></image>
+  </view>
+  <view class="wancan">
+  晚餐
+  </view>
+  <view class = "wancanimage">
+  <image src="{{zaocan[2].url}}" bindtap="message2" data-url="{{zaocan[2].url}}" data-detail="{{zaocan[2].detail}}" ></image>
+  </view>
+  </view>
+  <button bindtap="button1">换一套</button>
+  <view class="icon1"><van-icon  name="fail" bindtap="icon" size = "100rpx"/></view>
+  </van-tab>
+<!--右侧栏-功效食物部分-->
+  <van-tab title="功效食物" class="van">
+  <!--主盒子-->
+  <view class="container">
+  <!--左侧栏-->
+  <view class="nav_left">
+    <block wx:for="{{cateItems}}">
+      <!--当前项的id等于item项的id，那个就是当前状态-->
+      <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用-->
+      <view class="nav_left_items {{curNav == item.cate_id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.cate_id}}">{{item.cate_name}}</view>
+    </block>
+  </view>
+  <!--右侧栏-->
+  <view class="nav_right">
+    <!--如果有数据，才遍历项-->
+    <view wx:if="{{cateItems[curIndex].ishaveChild}}">
+      <block wx:for="{{cateItems[curIndex].children}}">
+        <view class="nav_right_items">
+        <!--界面跳转 -->
+          <navigator url="../../detail/detail}}">
+          <view><image src="{{item.image}}" bindtap="message" data-url="{{item.image}}" data-detail="{{item.detail}}"></image></view>
+            <text>{{item.name}}</text>
+          </navigator>
+        </view>
+      </block>
+    </view>
+    <!--如果无数据，则显示数据-->
+    <view class="nodata_text" wx:else>该分类暂无数据</view>
+  </view>
+</view>
+<van-dialog use-slot show="{{ show }}" show-cancel-button bind:close="onClose">
+<image src="{{show_pic}}" /> 
+<text class="text1">{{show_detail}}</text>
+</van-dialog>
+</van-tab>
+</van-tabs>
+

@@ -1,0 +1,37 @@
+.indexTitle{
+  background-color: rgb(66,165,245);
+  font-size: 10vmin;
+  font-family: "blod";
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-shadow: -3rpx -3rpx 3rpx white,3rpx 3rpx 3rpx yellow;
+  margin-bottom: 5vmin;
+}
+@font-face {
+  font-family: "blod";
+  src: url('https://static.heytea.com/taro_trial/v1/font/WenYue-XinQingNianTi-NC-W8_1.otf');
+}
+Page{
+  font-family: "blod";  /*此处可以全选字体以及其余的全选操作*/
+}
+.bgWare {
+  position: absolute;
+  left: 0;
+  bottom: -2rpx;
+  width: 100%;
+  mix-blend-mode: screen;
+  height: 120rpx;
+  transform:rotate(180deg);
+}
+.contact{
+  margin-top:5vmin;
+  color: gray;
+  text-align: center;
+}
+.header {
+  position: relative; 
+  height:119.5rpx;
+  background: linear-gradient(to bottom, #56ccf2, #2f80ed);
+  top:80vmin;
+}

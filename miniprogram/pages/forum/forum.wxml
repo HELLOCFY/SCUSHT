@@ -1,0 +1,11 @@
+<view class="indexTitle">论坛</view>
+
+<button bindtap="postAMessage" class="btn">发帖</button>
+<button bindtap="viewMessage" class="btn">查看发帖信息</button>
+
+<view bindtap="howToUse" class="contact">如何使用？</view>
+<!-- 最下面波动的海浪 -->
+<view class="header">
+  <!-- 代码 -->
+  <image class="bgWare" src="https://codermoyv.gitee.io/coder-moyv/assets/images/wechat/bg_wave.gif"></image>
+</view>

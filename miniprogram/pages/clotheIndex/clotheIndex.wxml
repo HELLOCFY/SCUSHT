@@ -1,0 +1,9 @@
+<button class="user-info">
+    <open-data type="userAvatarUrl" class="image"></open-data>
+  <open-data type="userNickName" class="name"></open-data>
+</button>
+<view class="box">
+  <van-button bindtap="getTodayClothe" class="btn" type="default">获取穿搭推荐</van-button>
+  <van-button bindtap="lookSellOldClothe" class="btn" type="default">旧物转让信息</van-button>
+  <view bindtap="howToUse" class="contact">如何使用？</view>
+</view>

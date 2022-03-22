@@ -1,0 +1,15 @@
+  <button class="user-info">
+    <open-data type="userAvatarUrl" class="image"></open-data>
+  <open-data type="userNickName" class="name"></open-data>
+  </button>
+<view class="box">
+<van-toast id="van-toast"  />
+
+  <van-button bindtap="verify" class="btn" type="default">认证</van-button>
+  <van-button bindtap="lookMyMessage" class="btn" type="default">查看（删除）我的贴子</van-button>
+  <van-button bindtap="lookMyStar" class="btn" type="default">查看我收藏的贴子</van-button>
+  <van-button bindtap="bindMyDormitory" class="btn" type="default">绑定围合信息</van-button>
+  <van-button bindtap="adminEntry" class="btn" type="default">管理员处理通道</van-button>
+  <van-button class="btn" type="default" open-type="contact">联系客服</van-button>
+  <!--view bindtap="howToUse" class="contact" type="default">如何使用？/view-->
+</view>

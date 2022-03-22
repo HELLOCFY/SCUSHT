@@ -1,0 +1,68 @@
+<van-toast id="van-toast"  />
+<view bindtap="postAComment" class="btn">+</view>
+<view class="viewMessagebox">
+  <image class="userImage" src="{{answer.wx_url}}"></image>
+  <h class="userName">{{answer.name}}</h>
+  <h class="time">{{answer.time}}</h>
+  <view class="messageTitle">{{answer.title}}</view>
+  <view class="messageBox">{{answer.content}}</view>
+  <view class="imageBox" style="display:{{flag}}" >
+    <image src="{{answer.post_url}}" mode="widthFix" ></image>
+  </view>
+</view>
+
+
+<!-- 以下为对贴子的其余操作(点赞、收藏、举报) -->
+<view class="optionBox">
+  <view class="option" bindtap="like">
+    <image src="{{like_src}}"></image>
+    <h>{{answer.like_nums}}</h>
+  </view>
+
+  <view class="option" bindtap="save">
+    <image src="{{save_src}}"></image>
+    <h>{{answer.save_nums}}</h>
+  </view>
+
+  <view class="option" bindtap="showPopup">
+    <image src="{{report_src}}"></image>
+    <h>举报</h>
+  </view>
+
+  <van-popup
+  show="{{ show }}"
+  round
+  position="bottom"
+  custom-style="height: 40%;"
+  bind:close="onClose"
+  >
+  <!--若是异步方式进行选择处理，则在columns后加入loading-->
+  <van-picker 
+   show-toolbar
+   title="举报类型选择"
+   columns="{{ columns }}" 
+   default-index="{{ 0 }}" 
+   bind:change="onChange" 
+   bind:cancel="onCancel"
+   bind:confirm="onConfirm"
+   />
+  </van-popup>
+</view>
+
+
+
+
+
+
+<view class="text">评论：{{answer.comment_nums}}条</view>
+<view wx:for="{{comment_answer}}">
+  <view class="viewMessagebox"  bindtap="showAMessage" wx:key="index" data-index="{{index}}">
+  <image class="userImage" src="{{item.url}}">
+  </image>
+  <h class="userName">{{item.name}}</h>
+  <h class="time">{{item.time}}</h>
+  <view class="messageTitle">{{item.title}}</view>
+  <view class="messageBox">{{item.content}}</view>
+  </view>
+</view>
+

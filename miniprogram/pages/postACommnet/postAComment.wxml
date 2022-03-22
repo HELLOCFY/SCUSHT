@@ -1,0 +1,11 @@
+<view class="indexTitle">评论</view>
+
+<form report-submit="true" bindsubmit="save">
+  <view class="box2">
+    <span class="label">内容:</span><textarea type="textarea" maxlength="500" placeholder="此处输入评论。" class="messageContext" name="content" value="{{contentVal}}" bindinput="contentInput"/>
+  </view>
+  <view class="buttonBox">
+    <button class="button" form-type="submit">提交</button>
+  </view>
+</form>
+<!--view bindtap="howToUse" class="contact">如何使用？/view -->

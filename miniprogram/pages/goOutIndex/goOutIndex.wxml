@@ -1,0 +1,80 @@
+<!--pages/goOutIndex/goOutIndex.wxml-->
+<van-toast id="van-toast"  />
+<van-tabs active="{{ active }}" sticky>
+  <van-tab title="校区交通方式">
+<!--出发地按钮-->
+  <van-button bindtap="showPopup1" ><text space="emsp">出发地:      {{place1}}</text></van-button>
+  <van-popup
+  show="{{ show1 }}"
+  round
+  position="bottom"
+  custom-style="height: 40%;"
+  bind:close="onClose"
+  >
+  <!--若是异步方式进行选择处理，则在columns后加入loading-->
+  <van-picker 
+   show-toolbar
+   title="出发地选择"
+   columns="{{ columns1 }}" 
+   default-index="{{ 0 }}" 
+   bind:change="onChange1" 
+   bind:cancel="onCancel1"
+   bind:confirm="onConfirm1"
+   />
+  </van-popup>
+<!--目的地选择-->
+<van-button bindtap="showPopup2" ><text space="emsp">目的地:      {{place2}}</text></van-button>
+  <van-popup
+  show="{{ show2 }}"
+  round
+  position="bottom"
+  custom-style="height: 40%;"
+  bind:close="onClose1"
+  >
+  <!--若是异步方式进行选择处理，则在columns后加入loading-->
+  <van-picker 
+   show-toolbar
+   title="目的地选择"
+   columns="{{ columns2 }}" 
+   default-index="{{ 0 }}" 
+   bind:change="onChange2" 
+   bind:cancel="onCancel2"
+   bind:confirm="onConfirm2"
+   />
+  </van-popup>
+  <van-button bindtap="send">确定</van-button>
+  <van-popup
+  show="{{ show3 }}"
+  closeable
+  position="bottom"
+  custom-style="height: 20%"
+  bind:close="onClose1">
+  <view class="text1">出发地与目的地不能相同</view>
+  </van-popup>
+  <view class="word">
+  <text class="text2">地铁：\n{{way.detail}}\n\n校车时刻表：</text>
+  <van-icon name="location-o" is-link bind:click="showPopup3"/>
+  <van-popup show="{{ show4 }}" bind:close="onClose3"><text></text><image class="img2" src="{{way.url1}}"></image></van-popup>
+  <van-icon name="location-o" is-link bind:click="showPopup4"/>
+  <van-popup show="{{ show5 }}" bind:close="onClose4"> <image class="img3" src="{{way.url2}}"></image></van-popup>
+  </view>
+  </van-tab>
+
+<van-tab title="场所信息">
+<view class="head">
+<view wx:for="{{message}}"class="body" >
+<image class="img1" src="{{item.url}}" bindtap="onClick" data-url="{{item.url}}" data-detail="{{item.detail}}"></image>
+<text class="text3">\n{{item.name}}\n\n</text>
+</view>
+<van-dialog
+  use-slot 
+  show="{{ show }}"
+  show-cancel-button
+  bind:close="onClose"
+>
+<image src="{{show_pic}}" /> 
+<text class="text4">{{show_detail}}</text>
+</van-dialog>
+</view>
+</van-tab>
+</van-tabs>

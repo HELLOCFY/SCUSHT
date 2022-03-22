@@ -1,0 +1,14 @@
+<input type="text" placeholder="请输入您要查询的内容" class="searchBox" bindinput="getInput"/>
+<view class="searchBtn" bindtap="confirm">确定</view>
+
+
+<view wx:for="{{answer}}">
+  <view class="viewMessagebox"  bindtap="showAMessage" wx:key="index" data-index="{{index}}">
+  <image class="userImage" src="{{item.url}}">
+  </image>
+  <h class="userName">{{item.name}}</h>
+  <h class="time">{{item.time}}</h>
+  <view class="messageTitle">{{item.title}}</view>
+  <view class="messageBox">{{item.quick_text}}...</view>
+  </view>
+</view>

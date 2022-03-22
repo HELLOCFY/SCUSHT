@@ -1,0 +1,52 @@
+/* pages/clotheIndex/clotheIndex.wxss */
+.btn{
+  margin-top: 20vmin;
+  display: block;
+
+}
+.bgWare {
+  position: absolute;
+  left: 0;
+  bottom: -2rpx;
+  width: 100%;
+  mix-blend-mode: screen;
+  height: 120rpx;
+  transform:rotate(180deg);
+}
+.contact{
+  margin-top:5vmin;
+  color: gray;
+  text-align: center;
+}
+.header {
+  position: relative; 
+  height:119.5rpx;
+  background: linear-gradient(to bottom, #56ccf2, #2f80ed);
+  top:67vmin;
+}
+.contact{
+  margin-top:5vmin;
+  color: gray;
+  text-align: center;
+}
+.box{
+  text-align: center;
+}
+.image{
+  width: 128rpx;
+  height: 128rpx;
+  overflow:hidden;  
+  border-radius: 50%; 
+  margin-top: 100rpx;
+}
+.user-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+  background-color: white;
+}
+.name{
+  font-size: 5vmin;
+  color: black;
+}

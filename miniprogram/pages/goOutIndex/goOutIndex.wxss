@@ -1,0 +1,54 @@
+/* pages/goOutIndex/goOutIndex.wxss */
+.button1{
+    position: relative;
+    width:30% !important;
+    background-color: aqua;
+}
+.button2{
+  position: relative;
+    width:30% !important;
+    background-color: blanchedalmond;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}
+.mini-btn{
+  margin-right: 10rpx;
+}
+button{width: 100%!important;}
+
+
+.text1{
+  text-align: center!important;
+}
+.word { 
+  border: 3rpx solid #faca82;
+	border-radius: 10rpx;
+  padding: 10rpx;
+}
+.text2{
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 5%;
+}
+.img2{
+  width:700rpx;
+  height:1200rpx;
+}
+.img3{
+  width:700rpx;
+  height:1200rpx;
+}
+.head{
+  text-align:center;
+}
+
+.text3{
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 5%;
+}
+
+.text4{
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 5%;
+}

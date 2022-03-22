@@ -1,0 +1,39 @@
+<!--pages/showAReport/showAReport.wxml-->
+<van-toast id="van-toast"  />
+<view class="viewMessagebox">
+  <image class="userImage" src="{{answer.wx_url}}"></image>
+  <h class="userName">{{answer.name}}</h>
+  <h class="time">{{answer.time}}</h>
+  <view class="messageTitle">{{answer.title}}</view>
+  <view class="messageBox">{{answer.content}}</view>
+  <view class="imageBox" style="display:{{flag}}">
+    <image src="{{answer.post_url}}"></image>
+  </view>
+</view>
+
+
+<!-- 以下为管理员对贴子的操作(pass 和 delete) -->
+<view class="optionBox">
+  <view class="option" bindtap="pass">
+    <image src="{{pass_src}}"></image>
+    <h>忽略该帖</h>
+  </view>
+  <view class="option" bindtap="delete">
+    <image src="{{delete_src}}"></image>
+    <h>删除该帖</h>
+  </view>
+</view>
+
+
+<view class="text">评论：{{answer.comment_nums}}条</view>
+<view wx:for="{{comment_answer}}">
+  <view class="viewMessagebox"  bindtap="showAMessage" wx:key="index" data-index="{{index}}">
+  <image class="userImage" src="{{item.url}}">
+  </image>
+  <h class="userName">{{item.name}}</h>
+  <h class="time">{{item.time}}</h>
+  <view class="messageTitle">{{item.title}}</view>
+  <view class="messageBox">{{item.content}}</view>
+  </view>
+</view>
+

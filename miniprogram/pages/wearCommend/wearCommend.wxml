@@ -1,0 +1,18 @@
+<view class="title">请选择您的性别</view>
+<view class="bigBox">
+  <radio-group bindchange="chooseSex" class="chooseBox">
+    <radio color="blue" value="男"> 男</radio>
+    <radio color="blue" value="女"> 女</radio>
+  </radio-group>
+
+
+  <view class="title">请选择现在的季节</view>
+  <radio-group bindchange="chooseSeason" class="chooseBox">
+    <radio color="blue" value="春秋">春秋</radio>
+    <radio color="blue" value="夏"> 夏</radio>
+    <radio color="blue" value="冬"> 冬</radio>
+  </radio-group>
+</view>
+<button class="btn" bindtap="submit">确定</button>
+
+<image src="{{url}}" class="img" mode="widthFix"></image>

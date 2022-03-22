@@ -1,0 +1,26 @@
+/* pages/wearCommend/wearCommend.wxss */
+.title{
+  text-align: center;
+  font-size: larger;
+  margin-top: 2vmax;
+  margin-bottom: 2vmax;
+}
+.chooseBox{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 60vmin;
+  margin-left: 20vmin;
+
+}
+.bigBox{
+  text-align: center;
+  position: relative;
+}
+.btn{
+  margin-top: 5vmax;
+}
+.img{
+  width: 80vmin;
+  margin-left: 10vmin;
+}

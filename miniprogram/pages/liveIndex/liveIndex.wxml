@@ -1,0 +1,93 @@
+<!--pages/liveIndex/liveIndex.wxml-->
+<van-dialog use-slot show="{{ show }}" show-cancel-button bind:close="onClose1">
+<van-toast id="van-toast"  />
+<image src="{{show_pic}}"/> 
+<text>{{show_detail}}</text>
+</van-dialog>
+<van-tabs class="tabs1" active="{{ active }}" bind:change="onChange1" sticky>
+<!--“住”版块的生活tips功能-->
+<van-tab title="生活tips">
+<!--侧边导航栏-->
+<view class="all">
+  <view class="left">
+    <van-sidebar active-key="{{ activeKey }}" bind:change="onChange" >
+      <van-sidebar-item title="功能性" />
+      <van-sidebar-item title="观赏性" />
+    </van-sidebar>
+  </view>
+  <view class="box_1" wx:if="{{activeKey == 0}}">
+  <view wx:for="{{livetips[activeKey].children}}">
+  <image src="{{item.url}}" bindtap="message" data-url="{{item.url}}" data-detail="{{item.detail}}"></image>
+  <text class="text7">\n{{item.name}}</text>
+  </view>
+  </view>
+  <view class="box_1" wx:elif="{{activeKey == 1}}">
+  <view wx:for="{{livetips[activeKey].children}}">
+  <image src="{{item.url}}" bindtap="message" data-url="{{item.url}}" data-detail="{{item.detail}}"></image>
+  <text class="text8">\n{{item.name}}</text>
+  </view>
+  </view>
+</view>
+</van-tab>
+<!--“住”版块的活动打卡功能-->
+  <van-tab title="活动打卡">
+<!--第一个按钮-->
+  <button name="早起打卡" class="button1" bindtap="onclick" data-id="1">
+  <view class="image1">
+  <image src="/images/early.jpg" ></image>
+  <text class="text1">早起\n给自己一个微笑,告诉自己今天会更美好。朋友们,早安!\n打卡状态:{{state1}}
+  </text>
+  </view>
+  </button>
+<!--第二个按钮-->
+<button name="健身打卡" class="button2" bindtap="onclick1" data-id="2">
+  <view class="image2">
+  <image src="/images/strong.jpg" ></image>
+  <text class="text2">运动\n 我们都不用为了天亮去跑。跑下去,天自己会亮\n打卡状态:{{state2}}
+  </text>
+  </view>
+  </button>
+<!--第三个按钮-->
+<button name="学习打卡" class="button3" bindtap="onclick2" data-id="3">
+  <view class="image3">
+  <image src="/images/study.jpg" ></image>
+  <text class="text3">学习\n 一个人要为某个梦想而奋斗\n打卡状态:{{state3}}
+  </text>
+  </view>
+  </button>
+<!--第四个按钮-->
+<button name="睡觉打卡" class="button4" bindtap="onclick3" data-id="4">
+  <view class="image4">
+  <image src="/images/read.jpg" ></image>
+  <text class="text4">阅读\n读书可以拓宽视野，又可以提升人生价值。\n打卡状态:{{state4}}
+  </text>
+  </view>
+  </button>
+  </van-tab>
+
+  <van-tab title="围合信息">
+  <button bindtap="showPopup" class="button5"><text class="text6">单元选择</text></button>
+  <van-popup
+  show="{{ show1 }}"
+  round
+  position="bottom"
+  custom-style="height: 40%;"
+  bind:close="onClose"
+  >
+  <!--若是异步方式进行选择处理，则在columns后加入loading-->
+  <van-picker 
+   show-toolbar
+   title="单元选择"
+   columns="{{ columns }}" 
+   default-index="{{ 0 }}" 
+   bind:change="onChange2" 
+   bind:cancel="onCancel"
+   bind:confirm="onConfirm"
+   />
+  </van-popup>
+  <view  class="view1"wx:for="{{message}}">
+  <text  class="text5"space="emsp">寝室号：{{item.room}}   姓名：{{item.name}}\n\n</text>
+  </view>
+  </van-tab>
+</van-tabs>
+

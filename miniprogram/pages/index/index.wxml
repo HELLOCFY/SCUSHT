@@ -1,0 +1,37 @@
+
+<!-- 轮播图列表 -->
+<!--swiper-->
+<view class="banner" style="margin-top:20vmin">
+  <swiper indicator-dots autoplay previous-margin="20rpx" next-margin="20rpx" circular>
+    <swiper-item><image src="https://tse1-mm.cn.bing.net/th/id/OIP-C.usUkwPoyyc6rwJItN57yoQHaE8?w=277&h=184&c=7&r=0&o=5&dpr=1.38&pid=1.7"></image></swiper-item>
+    <swiper-item><image src="https://tse1-mm.cn.bing.net/th/id/OIP-C.ucE19pDVtIODSwooaqOuWAHaD0?w=315&h=179&c=7&r=0&o=5&dpr=1.38&pid=1.7"></image></swiper-item>
+    <swiper-item><image src="https://tse1-mm.cn.bing.net/th/id/R-C.65d7945bcdfdebb6129b5f03177b3952?rik=9nj1J68xW3RwoQ&riu=http%3a%2f%2fimg.mp.itc.cn%2fupload%2f20160908%2f67577c6fc81a472e902c0fc2570aee4e_th.jpg&ehk=5nCD8Gj6h%2b8cFQ9eed65px%2b2zIIIKKQyOV8bl2Sc%2fGg%3d&risl=&pid=ImgRaw&r=0"></image></swiper-item>
+  </swiper>
+</view>
+<view class="indexChooseBox">
+  <navigator class="indexChoose" url="/pages/clotheIndex/clotheIndex">
+    <image class="indexChoosePic" src="/images/clothe.png"></image>
+    <view class="indexChooseTxt">衣</view>
+  </navigator>
+  
+  <navigator class="indexChoose" url="/pages/foodIndex/foodIndex">
+    <image class="indexChoosePic" src="/images/food.png"></image>
+    <view class="indexChooseTxt">食</view>
+  </navigator>
+
+  <navigator class="indexChoose" url="/pages/liveIndex/liveIndex">
+    <image class="indexChoosePic" src="/images/live.png"></image>
+    <view class="indexChooseTxt">住</view>
+  </navigator>
+
+  <navigator class="indexChoose" url="/pages/goOutIndex/goOutIndex">
+    <image class="indexChoosePic" src="/images/trip.png"></image>
+    <view class="indexChooseTxt">行</view>
+  </navigator>
+</view>
+
+<view class="contact">联系我们：四川大学课程设计开发小组</view>
+<view class="contact">E-mail：870142913@qq.com</view>
+
+
+

@@ -1,0 +1,62 @@
+/* pages/postAMessage/postAMessage.wxss */
+.messageTitle{
+  height: 10vmin;
+  width: 70vmin;
+  border:1vmin solid gray;
+  display: inline-block;
+  border-radius: 2vmin;
+  font-family: 'bold';
+}
+.messageContext{
+  width: 70vmin;
+  height: 80vmin;
+  border:1vmin solid gray;
+  border-radius: 2vmin;
+}
+.label{
+  line-height: 10vmin;
+  text-align: center;
+  font-size: 7vmin;
+  top:1vmin;
+  /*left: 0;
+  margin-right: 20vmin; */
+
+  float: left;
+  margin-top: 0;
+}
+.box{
+  margin-top: 10vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-size: 8vmin;
+}
+.box2{
+  margin-top: 10vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-size: 5vmin;
+}
+@font-face {
+  font-family: "blod";
+  src: url('https://static.heytea.com/taro_trial/v1/font/WenYue-XinQingNianTi-NC-W8_1.otf');
+}
+.button{
+  display: inline-block;
+  align-items: center;
+  background-color: rgb(66,165,245);
+  width: 30vmin !important;
+
+}
+.buttonBox{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 10vmin;
+}
